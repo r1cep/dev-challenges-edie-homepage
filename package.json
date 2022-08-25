@@ -1,0 +1,50 @@
+{
+  "name": "dev-challenges-edie-homepage",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "npm-run-all -p lint:**",
+    "lint:stylelint": "stylelint '**/*.{css,scss}' --cache",
+    "lint:markuplint": "markuplint '**/*.html'",
+    "lint:prettier": "prettier '**/*.@(cjs|css|scss|html)' --check",
+    "fix": "npm-run-all -s fix:**",
+    "fix:stylelint": "stylelint '**/*.{css,scss}' --cache --fix",
+    "fix:markuplint": "markuplint '**/*.html' --fix",
+    "fix:prettier": "prettier '**/*.@(cjs|css|scss|html)' --write",
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "lint-staged": {
+    "*.html": [
+      "markuplint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@markuplint/html-parser": "^2.2.2",
+    "@markuplint/html-spec": "^2.8.0",
+    "@types/node": "^18.7.13",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "markuplint": "^2.10.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "vite": "^3.0.7"
+  },
+  "dependencies": {
+    "destyle.css": "^3.0.2",
+    "sass": "^1.54.8"
+  }
+}
