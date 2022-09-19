@@ -6,66 +6,162 @@
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" href="devchallenges.png" />
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap" rel="stylesheet" />
-    <title>Devchallenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&amp;family=Montserrat:wght@700&amp;family=Poppins:wght@300;400;500;700&amp;display=swap" />
+    <title>Edie homepage</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank" rel="noreferrer">devchallenges.io</a>
-        </h1>
-
-        <p>If you have any questions, don't hesitate to ask on Discord. Here are 7 general steps to complete the challenge:</p>
+    <header class="container" aria-labelledby="page-title" id="top">
+      <div class="header">
+        <h1 class="page-title" id="page-title">Edie</h1>
+        <nav class="nav" aria-label="Global navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-item__link" href="#top" rel="noreferrer">Home</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#services" rel="noreferrer">Services</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#ower-works" rel="noreferrer">Ower works</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#clients" rel="noreferrer">Clients</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#contact" rel="noreferrer">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu">
+          <button class="menu__btn" aria-label="Menu" data-menu="close">
+            <span class="menu__bar" aria-hidden="true"></span>
+          </button>
+          <nav class="menu__drawer" aria-label="Drawer navigation">
+            <ul class="menu__drawer-list">
+              <li class="menu__drawer-item"><a href="#top" rel="noreferrer">Home</a></li>
+              <li class="menu__drawer-item"><a href="#services" rel="noreferrer">Services</a></li>
+              <li class="menu__drawer-item"><a href="#ower-works" rel="noreferrer">Ower works</a></li>
+              <li class="menu__drawer-item"><a href="#clients" rel="noreferrer">Clients</a></li>
+              <li class="menu__drawer-item"><a href="#contact" rel="noreferrer">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li><b>Step 3:</b> Login to Figma to checkout font, color, spacing,..</li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li><b>Step 7:</b> Share your solution on Discord, Twitter and other platforms to ask for feedback</li>
-      </ul>
-    </div>
+    </header>
+    <main class="main container">
+      <section class="hero" aria-labelledby="hero">
+        <div class="container-sm">
+          <p class="hero__beginning hero__inner-content">Unhappy with your website?</p>
+          <h2 class="hero__title hero__inner-content font-lg" id="hero">We create beautiful and fast web services</h2>
+        </div>
+        <img class="hero__img" src="./heroImage.jpg" alt="" width="1332" height="354" decoding="async" />
+      </section>
+      <section class="sub-hero" aria-labelledby="sub-hero">
+        <div class="container-sm">
+          <h2 class="sub-hero__inner-content font-lg" id="sub-hero">Story, emotion and purpose</h2>
+          <p class="sub-hero__description sub-hero__inner-content">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+          <p class="sub-hero__contact-title sub-hero__inner-content">Want us to contact you?</p>
+          <div class="sub-hero__contact-form sub-hero__inner-content">
+            <input class="sub-hero__contact-input" type="email" name="email" placeholder="Email" required aria-label="Email" />
+            <button class="sub-hero__contact-btn">Join</button>
+          </div>
+        </div>
+      </section>
+      <section class="services container-md" aria-labelledby="services">
+        <h2 class="services__title font-md" id="services">We offer high demand services</h2>
+        <ul class="card-list">
+          <li class="card">
+            <span class="material-icons card__icon card__icon--create">create</span>
+            <p class="card__title">UI/UX Design</p>
+            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            <a class="card__btn" href="#" rel="noreferrer">Get started</a>
+          </li>
+          <li class="card">
+            <span class="material-icons card__icon card__icon--code">code</span>
+            <p class="card__title">Front End</p>
+            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            <a class="card__btn" href="#" rel="noreferrer">Get started</a>
+          </li>
+          <li class="card">
+            <span class="material-icons card__icon card__icon--storage">storage</span>
+            <p class="card__title">Back End</p>
+            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            <a class="card__btn" href="#" rel="noreferrer">Get started</a>
+          </li>
+        </ul>
+      </section>
+      <section class="works container-md" aria-labelledby="ower-works">
+        <h2 class="works__title font-md" id="ower-works">Good design means good business</h2>
+        <ul class="works__list">
+          <li class="works__item">
+            <img class="works__item-img" src="./smarthome.jpg" alt="" width="545" height="545" decoding="async" loading="lazy" />
+            <p class="works__item-title">Full stack application</p>
+            <p class="works__item-description">Smart home dashboard</p>
+          </li>
+          <li class="works__item">
+            <img class="works__item-img" src="./onboard.png" alt="" width="545" height="545" decoding="async" loading="lazy" />
+            <p class="works__item-title">Full stack application</p>
+            <p class="works__item-description">Smart home dashboard</p>
+          </li>
+          <li class="works__item">
+            <img class="works__item-img" src="./booking.png" alt="" width="545" height="545" decoding="async" loading="lazy" />
+            <p class="works__item-title">Full stack application</p>
+            <p class="works__item-description">Smart home dashboard</p>
+          </li>
+          <li class="works__item">
+            <img class="works__item-img" src="./juice-product.png" alt="" width="545" height="545" decoding="async" loading="lazy" />
+            <p class="works__item-title">Full stack application</p>
+            <p class="works__item-description">Smart home dashboard</p>
+          </li>
+        </ul>
+        <a class="works__link" href="#" rel="noreferrer">see more<span class="material-icons">arrow_right_alt</span></a>
+      </section>
+      <section class="team container-md" aria-labelledby="team">
+        <div class="team-inner">
+          <p class="team__sub-title">Meet the team</p>
+          <h2 class="team__title font-md" id="team">We are chilled and a laidback team</h2>
+          <p class="team__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <ul class="team__member-list">
+          <li class="team__member"><img class="team__member-img" src="./person1.png" alt="" width="260" height="260" decoding="async" loading="lazy" /></li>
+          <li class="team__member"><img class="team__member-img" src="./person2.png" alt="" width="292" height="300" decoding="async" loading="lazy" /></li>
+          <li class="team__member"><img class="team__member-img" src="./person3.png" alt="" width="320" height="320" decoding="async" loading="lazy" /></li>
+        </ul>
+      </section>
+      <section class="clients container-md" aria-labelledby="clients">
+        <h2 class="clients__title font-md" id="clients">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h2>
+        <ul class="clients__list">
+          <li class="clients__item">
+            <img class="clients__img" src="./person4.png" alt="" width="82" height="82" decoding="async" loading="lazy" />
+            <div>
+              <p class="clients__name">Carlos Tran</p>
+              <p class="clients__job">The Decorate Gatsby</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer container-md" id="contact">
+      <div class="footer-content">
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a href="#top" rel="noreferrer">Home</a></li>
+            <li class="footer-nav__item"><a href="#services" rel="noreferrer">Services</a></li>
+            <li class="footer-nav__item"><a href="#ower-works" rel="noreferrer">Ower works</a></li>
+            <li class="footer-nav__item"><a href="#clients" rel="noreferrer">Clients</a></li>
+            <li class="footer-nav__item"><a href="#contact" rel="noreferrer">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-sns">
+          <p class="footer-sns__title">Edie</p>
+          <ul class="footer-sns__list">
+            <li class="footer-sns__item"><img class="footer-sns__img" src="./instagram.svg" alt="" width="24" height="24" decoding="async" loading="lazy" /></li>
+            <li class="footer-sns__item"><img class="footer-sns__img" src="./linkedin.svg" alt="" width="24" height="24" decoding="async" loading="lazy" /></li>
+            <li class="footer-sns__item"><img class="footer-sns__img" src="./twitter.svg" alt="" width="24" height="24" decoding="async" loading="lazy" /></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-contact__title">Want us to contact you?</p>
+          <div class="footer-contact__form">
+            <input class="footer-contact__input" type="email" name="femail" placeholder="Email" required aria-label="Email" />
+            <button class="footer-contact__btn">Join</button>
+          </div>
+        </div>
+      </div>
+      <small class="footer-signature">created by r1cep - devChallenges.io</small>
+    </footer>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
