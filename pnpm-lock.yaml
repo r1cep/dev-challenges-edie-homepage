@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@markuplint/html-parser': ^2.2.2
   '@markuplint/html-spec': ^2.8.0
+  '@material-design-icons/font': ^0.12.1
   '@types/node': ^18.7.13
   destyle.css: ^3.0.2
   husky: ^8.0.1
@@ -19,6 +20,7 @@ specifiers:
   vite: ^3.0.7
 
 dependencies:
+  '@material-design-icons/font': 0.12.1
   destyle.css: 3.0.2
   sass: 1.54.8
 
@@ -201,6 +203,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@material-design-icons/font/0.12.1:
+    resolution: {integrity: sha512-qJjPi4VT15Ue0KivT8lMsEeM3PEcpqKJS5p870MGrpvH4sddION+vCOfeQB1aaMM4bbaCuLty0O6TVrmrAWNnQ==}
+    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
